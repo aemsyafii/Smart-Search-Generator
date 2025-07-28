@@ -19,35 +19,52 @@
   --bs-light-rgb: 248, 249, 250;
   --bs-dark: #212529;
   --bs-dark-rgb: 33, 37, 41;
-  
-  /* Custom variables for our design system */
+
+  /* Refined design system variables - more subtle */
   --app-bg: #ffffff;
   --app-text: #030213;
   --app-muted: #6c757d;
-  --app-accent: #e9ecef;
-  --app-border: rgba(0, 0, 0, 0.125);
+  --app-accent: #f8f9fa;
+  --app-border: rgba(0, 0, 0, 0.06);
+  --app-border-hover: rgba(0, 0, 0, 0.12);
+  --app-border-focus: rgba(13, 110, 253, 0.2);
   --app-hover: #f8f9fa;
-  --app-input-bg: #f8f9fa;
-  
-  /* Simple modal suggestion colors */
+  --app-input-bg: #ffffff;
+
+  /* Subtle suggestion colors */
   --suggestion-unopened-bg: #ffffff;
-  --suggestion-unopened-border: rgba(0, 0, 0, 0.125);
+  --suggestion-unopened-border: rgba(0, 0, 0, 0.05);
+  --suggestion-unopened-border-hover: rgba(13, 110, 253, 0.15);
   --suggestion-unopened-text: #030213;
-  --suggestion-unopened-hover: #f0f7ff;
-  
+  --suggestion-unopened-hover: #f8faff;
+
   --suggestion-opened-bg: #f8f9fa;
-  --suggestion-opened-border: rgba(0, 0, 0, 0.08);
+  --suggestion-opened-border: rgba(0, 0, 0, 0.04);
+  --suggestion-opened-border-hover: rgba(108, 117, 125, 0.15);
   --suggestion-opened-text: #6c757d;
   --suggestion-opened-hover: #e9ecef;
-  
-  /* Section header colors - transparent backgrounds with bottom borders only */
-  --section-unopened-border: #b3d9ff;
+
+  /* Refined section colors - more subtle */
+  --section-unopened-bg: #ffffff;
+  --section-unopened-border: rgba(13, 110, 253, 0.08);
+  --section-unopened-border-hover: rgba(13, 110, 253, 0.15);
   --section-unopened-text: #0d6efd;
-  --section-unopened-hover: rgba(173, 216, 255, 0.1);
-  
-  --section-opened-border: #d0d0d0;
+  --section-unopened-hover: rgba(13, 110, 253, 0.03);
+
+  --section-opened-bg: #ffffff;
+  --section-opened-border: rgba(108, 117, 125, 0.08);
+  --section-opened-border-hover: rgba(108, 117, 125, 0.15);
   --section-opened-text: #6c757d;
-  --section-opened-hover: rgba(108, 117, 125, 0.1);
+  --section-opened-hover: rgba(108, 117, 125, 0.03);
+
+  /* Subtle section box colors */
+  --section-box-unopened-bg: #ffffff;
+  --section-box-unopened-border: rgba(13, 110, 253, 0.1);
+  --section-box-unopened-shadow: 0 2px 8px rgba(13, 110, 253, 0.04);
+
+  --section-box-opened-bg: #ffffff;
+  --section-box-opened-border: rgba(108, 117, 125, 0.1);
+  --section-box-opened-shadow: 0 2px 8px rgba(108, 117, 125, 0.04);
 }
 
 [data-bs-theme="dark"] {
@@ -55,33 +72,49 @@
   --app-text: #ffffff;
   --app-muted: #adb5bd;
   --app-accent: #343a40;
-  --app-border: rgba(255, 255, 255, 0.125);
+  --app-border: rgba(255, 255, 255, 0.06);
+  --app-border-hover: rgba(255, 255, 255, 0.12);
+  --app-border-focus: rgba(102, 179, 255, 0.2);
   --app-hover: #343a40;
-  --app-input-bg: #343a40;
-  
+  --app-input-bg: #212529;
+
   --suggestion-unopened-bg: #212529;
-  --suggestion-unopened-border: rgba(255, 255, 255, 0.125);
+  --suggestion-unopened-border: rgba(255, 255, 255, 0.05);
+  --suggestion-unopened-border-hover: rgba(102, 179, 255, 0.15);
   --suggestion-unopened-text: #ffffff;
   --suggestion-unopened-hover: #2c3237;
-  
+
   --suggestion-opened-bg: #343a40;
-  --suggestion-opened-border: rgba(255, 255, 255, 0.08);
+  --suggestion-opened-border: rgba(255, 255, 255, 0.04);
+  --suggestion-opened-border-hover: rgba(173, 181, 189, 0.15);
   --suggestion-opened-text: #adb5bd;
   --suggestion-opened-hover: #495057;
-  
-  /* Section header colors for dark theme - transparent backgrounds with bottom borders only */
-  --section-unopened-border: #2d4a56;
+
+  --section-unopened-bg: #212529;
+  --section-unopened-border: rgba(102, 179, 255, 0.08);
+  --section-unopened-border-hover: rgba(102, 179, 255, 0.15);
   --section-unopened-text: #66b3ff;
-  --section-unopened-hover: rgba(102, 179, 255, 0.1);
-  
-  --section-opened-border: #4a4a4a;
+  --section-unopened-hover: rgba(102, 179, 255, 0.03);
+
+  --section-opened-bg: #212529;
+  --section-opened-border: rgba(173, 181, 189, 0.08);
+  --section-opened-border-hover: rgba(173, 181, 189, 0.15);
   --section-opened-text: #adb5bd;
-  --section-opened-hover: rgba(173, 181, 189, 0.1);
+  --section-opened-hover: rgba(173, 181, 189, 0.03);
+
+  --section-box-unopened-bg: #212529;
+  --section-box-unopened-border: rgba(102, 179, 255, 0.1);
+  --section-box-unopened-shadow: 0 2px 8px rgba(102, 179, 255, 0.04);
+
+  --section-box-opened-bg: #212529;
+  --section-box-opened-border: rgba(173, 181, 189, 0.1);
+  --section-box-opened-shadow: 0 2px 8px rgba(173, 181, 189, 0.04);
 }
 
-/* Enable responsive font sizing */
+/* Enhanced responsive typography - better readability */
 html {
-  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  font-size: clamp(1rem, 2.8vw, 1.125rem);
+  overflow-x: hidden;
 }
 
 body {
@@ -89,38 +122,60 @@ body {
   color: var(--app-text);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .app-container {
   min-height: 100vh;
   background-color: var(--app-bg);
+  padding: clamp(1rem, 4vw, 2rem);
+  overflow-x: hidden;
 }
 
-/* Enhanced Suggestion Items with Clear Distinction */
+/* Enhanced container spacing for mobile */
+.container-fluid {
+  padding-left: clamp(1rem, 4vw, 2rem) !important;
+  padding-right: clamp(1rem, 4vw, 2rem) !important;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* REFINED SUGGESTION ITEMS - Subtle and Clean */
 .suggestion-item {
-  border-radius: clamp(0.375rem, 1vw, 0.5rem);
-  padding: clamp(0.5rem, 2vw, 0.75rem);
-  margin-bottom: clamp(0.375rem, 1vw, 0.5rem);
+  border-radius: clamp(0.5rem, 1.5vw, 0.75rem);
+  padding: clamp(1rem, 3vw, 1.25rem);
+  margin-bottom: clamp(0.75rem, 2vw, 1rem);
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
-  gap: clamp(0.5rem, 1.5vw, 0.75rem);
-  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  gap: clamp(0.75rem, 2vw, 1rem);
+  font-size: clamp(1rem, 2.8vw, 1.125rem);
   background-color: var(--suggestion-unopened-bg);
   border: 1px solid var(--suggestion-unopened-border);
   color: var(--suggestion-unopened-text);
+  min-height: clamp(3.5rem, 7vw, 4rem);
+  line-height: 1.5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 .suggestion-item:hover {
   background-color: var(--suggestion-unopened-hover);
-  border-color: var(--bs-primary);
+  border-color: var(--suggestion-unopened-border-hover);
   transform: translateY(-1px);
-  box-shadow: 0 3px 12px rgba(13, 110, 253, 0.15);
+  box-shadow: 0 3px 12px rgba(13, 110, 253, 0.05);
 }
 
-/* Opened suggestions - clearly distinct styling */
+.suggestion-item:focus {
+  outline: 2px solid var(--app-border-focus);
+  outline-offset: 2px;
+  border-color: var(--suggestion-unopened-border-hover);
+}
+
+/* Opened suggestions - clearly distinct */
 .suggestion-item.opened {
   background-color: var(--suggestion-opened-bg);
   border-color: var(--suggestion-opened-border);
@@ -129,160 +184,295 @@ body {
 
 .suggestion-item.opened:hover {
   background-color: var(--suggestion-opened-hover);
-  border-color: var(--app-muted);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-color: var(--suggestion-opened-border-hover);
+  box-shadow: 0 2px 8px rgba(108, 117, 125, 0.05);
 }
 
-/* Simple modal specific styling */
 .suggestion-item.simple-modal-item {
-  margin-bottom: clamp(0.25rem, 0.8vw, 0.375rem);
-  border-radius: clamp(0.25rem, 0.8vw, 0.375rem);
+  margin-bottom: clamp(0.5rem, 1.5vw, 0.75rem);
+  border-radius: clamp(0.375rem, 1vw, 0.5rem);
+  min-height: clamp(3rem, 6vw, 3.5rem);
 }
 
-/* Section Headers - Transparent with Bottom Border Only */
+/* ELEGANT SECTION STYLING - Clean Boxes */
+.suggestion-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: clamp(1.5rem, 3vw, 2rem);
+  border-radius: clamp(0.75rem, 2vw, 1rem);
+  border: 1px solid;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  background-color: var(--app-bg);
+}
+
+.suggestion-section:nth-child(1) {
+  /* Not Yet Explored section */
+  border-color: var(--section-box-unopened-border);
+  box-shadow: var(--section-box-unopened-shadow);
+}
+
+.suggestion-section:nth-child(2) {
+  /* Already Explored section */
+  border-color: var(--section-box-opened-border);
+  box-shadow: var(--section-box-opened-shadow);
+}
+
+.suggestion-section:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* Refined Section Headers */
 .section-header {
   cursor: pointer;
-  padding: clamp(0.75rem, 2vw, 1rem);
-  padding-bottom: clamp(0.5rem, 1.5vw, 0.75rem);
-  margin-bottom: clamp(0.5rem, 1.5vw, 0.75rem);
-  background-color: transparent;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  background: transparent;
   border: none;
-  border-bottom: 2px solid;
-  border-radius: 0;
+  border-bottom: 1px solid;
   transition: all 0.2s ease;
   user-select: none;
+  min-height: clamp(3rem, 6vw, 3.5rem);
+  display: flex;
+  align-items: center;
 }
 
 .section-header.unopened {
   border-bottom-color: var(--section-unopened-border);
   color: var(--section-unopened-text);
+  background-color: var(--section-unopened-bg);
 }
 
 .section-header.unopened:hover {
   background-color: var(--section-unopened-hover);
-  border-bottom-color: var(--section-unopened-border);
+  border-bottom-color: var(--section-unopened-border-hover);
 }
 
 .section-header.opened {
   border-bottom-color: var(--section-opened-border);
   color: var(--section-opened-text);
+  background-color: var(--section-opened-bg);
 }
 
 .section-header.opened:hover {
   background-color: var(--section-opened-hover);
-  border-bottom-color: var(--section-opened-border);
+  border-bottom-color: var(--section-opened-border-hover);
 }
 
 .section-header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .section-title {
   display: flex;
   align-items: center;
-  gap: clamp(0.5rem, 1.5vw, 0.75rem);
+  gap: clamp(0.75rem, 2vw, 1rem);
 }
 
 .section-icon {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(1.125rem, 2.8vw, 1.375rem);
 }
 
 .section-count {
-  font-size: clamp(0.75rem, 2vw, 0.875rem);
+  font-size: clamp(0.8rem, 2.2vw, 0.9rem);
   opacity: 0.8;
+  background: rgba(0, 0, 0, 0.05);
+  padding: clamp(0.2rem, 0.4vw, 0.3rem) clamp(0.4rem, 0.8vw, 0.6rem);
+  border-radius: clamp(0.2rem, 0.4vw, 0.3rem);
+  font-weight: 500;
 }
 
 .section-chevron {
   transition: transform 0.2s ease;
-  font-size: clamp(0.875rem, 2.2vw, 1rem);
+  font-size: clamp(0.9rem, 2.2vw, 1rem);
   opacity: 0.7;
 }
 
 .section-content {
-  margin-bottom: clamp(1rem, 3vw, 1.5rem);
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  background: rgba(0, 0, 0, 0.005);
 }
 
-/* Sectioned Modal List */
+/* Modal list styling */
 .sectioned-modal-list {
   display: flex;
   flex-direction: column;
-  gap: clamp(1rem, 3vw, 1.5rem);
+  gap: clamp(1.5rem, 3vw, 2rem);
+  padding: clamp(0.5rem, 1vw, 1rem);
 }
 
-.suggestion-section {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Other components */
+/* COMPACT SETTINGS PANEL - Less prominent */
 .settings-panel {
   background-color: var(--app-accent);
+  border: 1px solid var(--app-border);
   border-radius: clamp(0.375rem, 1vw, 0.5rem);
   padding: clamp(0.75rem, 2vw, 1rem);
+  margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+  transition: all 0.2s ease;
+  font-size: clamp(0.85rem, 2.2vw, 0.9rem);
 }
 
+.settings-panel:hover {
+  background-color: var(--app-hover);
+  border-color: var(--app-border-hover);
+}
+
+/* PROMINENT SEARCH INPUT - Hero element */
 .search-input {
-  height: clamp(2.5rem, 6vw, 3rem);
-  font-size: clamp(1rem, 2.8vw, 1.125rem);
+  height: clamp(4.5rem, 10vw, 5rem);
+  font-size: clamp(1.2rem, 3.8vw, 1.375rem);
+  font-weight: 400;
   background-color: var(--app-input-bg);
-  border: 1px solid var(--app-border);
-  padding-left: clamp(2rem, 5vw, 2.5rem);
-  padding-right: clamp(2.5rem, 6vw, 3rem);
+  border: 2px solid var(--app-border);
+  border-radius: clamp(0.75rem, 2vw, 1rem);
+  line-height: 1.4;
+
+  padding-left: clamp(4rem, 9vw, 4.5rem) !important;
+  padding-right: clamp(4rem, 9vw, 4.5rem) !important;
+  padding-top: clamp(1rem, 2.5vw, 1.25rem);
+  padding-bottom: clamp(1rem, 2.5vw, 1.25rem);
+
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
 }
 
 .search-input:focus {
-  background-color: var(--app-bg);
-  border-color: var(--bs-primary);
-  box-shadow: 0 0 0 0.2rem rgba(3, 2, 19, 0.25);
+  background-color: #ffffff;
+  border-color: var(--app-border-focus);
+  box-shadow: 0 6px 24px rgba(13, 110, 253, 0.06), 0 0 0 3px rgba(13, 110, 253, 0.08);
+  outline: none;
 }
 
+.search-input::placeholder {
+  color: var(--app-muted);
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+/* IDENTICAL ICON POSITIONING - Search and shuffle exactly the same */
 .input-group-icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
   color: var(--app-muted);
-  font-size: clamp(0.875rem, 2.2vw, 1rem);
+  font-size: clamp(1.25rem, 3.2vw, 1.375rem);
+  pointer-events: none;
+  transition: all 0.2s ease;
+  opacity: 0.7;
 }
 
 .input-group-icon.start {
-  left: clamp(0.5rem, 1.5vw, 0.75rem);
+  left: clamp(1.375rem, 3vw, 1.75rem);
 }
 
 .input-group-icon.end {
-  right: clamp(0.5rem, 1.5vw, 0.75rem);
+  right: clamp(1.375rem, 3vw, 1.75rem);
+  pointer-events: auto;
 }
 
+/* SHUFFLE ICON - EXACTLY IDENTICAL TO SEARCH ICON */
 .btn-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: clamp(2rem, 5vw, 2.5rem);
-  height: clamp(2rem, 5vw, 2.5rem);
-  padding: 0;
-  border: none;
-  background: transparent;
+  /* Make it exactly identical to .input-group-icon */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
   color: var(--app-muted);
-  border-radius: clamp(0.25rem, 0.8vw, 0.375rem);
+
+  /* EXACT SAME SIZE as search icon */
+  font-size: clamp(1.25rem, 3.2vw, 1.375rem);
+
+  transition: all 0.2s ease;
+  opacity: 0.7;
+  cursor: pointer;
+
+  /* EXACT SAME POSITION as search icon */
+  right: clamp(1.375rem, 3vw, 1.75rem);
+
+  /* Remove ALL button styling - make it pure icon */
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  text-decoration: none !important;
+
+  /* Ensure clickability */
+  pointer-events: auto;
+
+  /* Override any Bootstrap button styles */
+  line-height: inherit !important;
+  vertical-align: baseline !important;
+  text-align: inherit !important;
+  white-space: nowrap !important;
+  font-weight: inherit !important;
+  font-family: inherit !important;
+  font-style: inherit !important;
 }
 
 .btn-icon:hover {
-  background-color: var(--app-hover);
+  /* EXACT SAME HOVER as search icon */
   color: var(--app-text);
+  opacity: 1;
+
+  /* Ensure no button styling */
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: translateY(-50%) !important;
+  text-decoration: none !important;
+}
+
+.btn-icon:active {
+  /* Minimal feedback */
+  opacity: 0.8;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: translateY(-50%) !important;
+}
+
+.btn-icon:focus {
+  /* No focus styling - unified with input */
+  outline: none !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: translateY(-50%) !important;
+}
+
+.btn-icon:visited {
+  color: var(--app-muted);
+}
+
+/* Enhanced focus states for input area */
+.search-input:focus~.input-group-icon {
+  color: var(--section-unopened-text);
+  opacity: 1;
+}
+
+.position-relative:hover .input-group-icon {
+  opacity: 0.9;
 }
 
 .stats-text {
-  font-size: clamp(0.75rem, 2.2vw, 0.875rem);
+  font-size: clamp(0.9rem, 2.3vw, 1rem);
   color: var(--app-muted);
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .external-link-icon {
   opacity: 0;
   transition: opacity 0.2s ease;
-  font-size: clamp(0.75rem, 2vw, 0.875rem);
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
   color: var(--app-muted);
 }
 
@@ -291,94 +481,244 @@ body {
 }
 
 .spinner-border-sm {
-  width: clamp(0.75rem, 2vw, 1rem);
-  height: clamp(0.75rem, 2vw, 1rem);
+  width: clamp(1rem, 2.5vw, 1.25rem);
+  height: clamp(1rem, 2.5vw, 1.25rem);
 }
 
-/* Modal Styles */
-.modal-header {
-  border-bottom: 1px solid var(--app-border);
-  padding: clamp(1rem, 3vw, 1.5rem);
+/* REFINED MODAL STYLES - Clean and spacious */
+.modal.show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  z-index: 1050;
+  overflow: hidden;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.modal-dialog {
+  position: relative;
+  width: 100%;
+  max-width: min(92vw, 1200px);
+  max-height: min(88vh, 800px);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-content {
   background-color: var(--app-bg);
   border: 1px solid var(--app-border);
-  border-radius: clamp(0.5rem, 1.5vw, 0.75rem);
+  border-radius: clamp(1rem, 2.5vw, 1.25rem);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--app-border);
+  padding: clamp(1.5rem, 3.5vw, 2rem);
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.005);
 }
 
 .modal-body {
-  max-height: 70vh;
+  flex: 1;
   overflow-y: auto;
-  padding: clamp(1rem, 2.5vw, 1.5rem);
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--app-muted) var(--app-accent);
 }
 
-.sectioned-modal-list .suggestion-item:last-child {
-  margin-bottom: 0;
+.modal-body::-webkit-scrollbar {
+  width: clamp(6px, 1.2vw, 8px);
 }
 
-/* Responsive headings */
+.modal-body::-webkit-scrollbar-track {
+  background: var(--app-accent);
+  border-radius: clamp(3px, 0.6vw, 4px);
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: var(--app-muted);
+  border-radius: clamp(3px, 0.6vw, 4px);
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: var(--app-text);
+}
+
+/* OPTIMIZED TYPOGRAPHY - Better readability */
 h1 {
-  font-size: clamp(1.75rem, 5vw, 2.5rem) !important;
+  font-size: clamp(2rem, 5.5vw, 2.75rem) !important;
+  line-height: 1.2 !important;
+  margin-bottom: clamp(0.75rem, 2vw, 1rem) !important;
+  font-weight: 600 !important;
 }
 
 h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem) !important;
+  font-size: clamp(1.65rem, 4.5vw, 2.25rem) !important;
+  line-height: 1.25 !important;
+  font-weight: 600 !important;
 }
 
 h3 {
-  font-size: clamp(1.25rem, 3.5vw, 1.75rem) !important;
+  font-size: clamp(1.4rem, 3.8vw, 1.875rem) !important;
+  line-height: 1.3 !important;
+  font-weight: 600 !important;
 }
 
 h4 {
-  font-size: clamp(1.125rem, 3vw, 1.5rem) !important;
+  font-size: clamp(1.2rem, 3.2vw, 1.5rem) !important;
+  line-height: 1.35 !important;
+  font-weight: 600 !important;
 }
 
 h5 {
-  font-size: clamp(1rem, 2.8vw, 1.25rem) !important;
+  font-size: clamp(1.05rem, 2.8vw, 1.25rem) !important;
+  line-height: 1.4 !important;
+  font-weight: 600 !important;
 }
 
 h6 {
-  font-size: clamp(0.875rem, 2.5vw, 1.125rem) !important;
+  font-size: clamp(0.95rem, 2.5vw, 1.125rem) !important;
+  line-height: 1.4 !important;
+  font-weight: 600 !important;
 }
 
-/* Responsive buttons */
+/* REFINED BUTTONS - Soft interactions */
 .btn {
-  font-size: clamp(0.75rem, 2.2vw, 0.875rem);
-  padding: clamp(0.375rem, 1vw, 0.5rem) clamp(0.75rem, 2vw, 1rem);
+  font-size: clamp(0.85rem, 2.3vw, 0.95rem);
+  padding: clamp(0.7rem, 1.8vw, 0.9rem) clamp(1rem, 2.8vw, 1.4rem);
+  border-radius: clamp(0.375rem, 1vw, 0.5rem);
+  min-height: clamp(2.5rem, 5.5vw, 2.75rem);
+  line-height: 1.4;
+  font-weight: 500;
+  border: 1px solid var(--app-border);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  border-color: var(--app-border-hover);
+  transform: translateY(-0.5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .btn-sm {
-  font-size: clamp(0.7rem, 2vw, 0.8rem);
-  padding: clamp(0.25rem, 0.8vw, 0.375rem) clamp(0.5rem, 1.5vw, 0.75rem);
+  font-size: clamp(0.8rem, 2.1vw, 0.875rem);
+  padding: clamp(0.4rem, 1.2vw, 0.6rem) clamp(0.7rem, 1.8vw, 0.9rem);
+  min-height: clamp(2.25rem, 4.8vw, 2.5rem);
 }
 
-/* Responsive form controls */
-.form-control, .form-select {
-  font-size: clamp(0.75rem, 2.2vw, 0.875rem);
+.btn-outline-secondary {
+  border-color: var(--app-border);
+  color: var(--app-muted);
+  background: transparent;
+  font-size: clamp(0.8rem, 2.1vw, 0.875rem);
 }
 
-.form-control-sm, .form-select-sm {
-  font-size: clamp(0.7rem, 2vw, 0.8rem);
+.btn-outline-secondary:hover {
+  background-color: var(--app-hover);
+  border-color: var(--app-border-hover);
+  color: var(--app-text);
 }
 
-/* Responsive spacing */
-.gap-1 { gap: clamp(0.25rem, 0.5vw, 0.25rem) !important; }
-.gap-2 { gap: clamp(0.375rem, 1vw, 0.5rem) !important; }
-.gap-3 { gap: clamp(0.5rem, 1.5vw, 1rem) !important; }
+.btn-outline-primary {
+  border-color: var(--app-border-focus);
+  color: var(--section-unopened-text);
+  background: transparent;
+}
 
-.mb-1 { margin-bottom: clamp(0.25rem, 0.5vw, 0.25rem) !important; }
-.mb-2 { margin-bottom: clamp(0.375rem, 1vw, 0.5rem) !important; }
-.mb-3 { margin-bottom: clamp(0.5rem, 1.5vw, 1rem) !important; }
-.mb-4 { margin-bottom: clamp(0.75rem, 2vw, 1.5rem) !important; }
-.mb-5 { margin-bottom: clamp(1rem, 3vw, 3rem) !important; }
+.btn-outline-primary:hover {
+  background-color: var(--section-unopened-hover);
+  border-color: var(--section-unopened-border-hover);
+  color: var(--section-unopened-text);
+}
 
-.py-4 { padding-top: clamp(0.75rem, 2vw, 1.5rem) !important; padding-bottom: clamp(0.75rem, 2vw, 1.5rem) !important; }
-.py-5 { padding-top: clamp(1rem, 3vw, 3rem) !important; padding-bottom: clamp(1rem, 3vw, 3rem) !important; }
+/* Enhanced form controls */
+.form-control,
+.form-select {
+  font-size: clamp(0.85rem, 2.3vw, 0.95rem);
+  padding: clamp(0.6rem, 1.6vw, 0.8rem);
+  border-radius: clamp(0.375rem, 1vw, 0.5rem);
+  min-height: clamp(2.5rem, 5.5vw, 2.75rem);
+  line-height: 1.4;
+  border: 1px solid var(--app-border);
+  transition: all 0.2s ease;
+}
 
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--app-border-focus);
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.08);
+}
+
+.form-control-sm,
+.form-select-sm {
+  font-size: clamp(0.8rem, 2.1vw, 0.875rem);
+  padding: clamp(0.4rem, 1.2vw, 0.6rem);
+  min-height: clamp(2.25rem, 4.8vw, 2.5rem);
+}
+
+/* Enhanced responsive spacing */
+.gap-1 {
+  gap: clamp(0.4rem, 1.2vw, 0.6rem) !important;
+}
+
+.gap-2 {
+  gap: clamp(0.6rem, 1.6vw, 0.8rem) !important;
+}
+
+.gap-3 {
+  gap: clamp(0.8rem, 2.2vw, 1.2rem) !important;
+}
+
+.mb-1 {
+  margin-bottom: clamp(0.4rem, 1.2vw, 0.6rem) !important;
+}
+
+.mb-2 {
+  margin-bottom: clamp(0.6rem, 1.6vw, 0.8rem) !important;
+}
+
+.mb-3 {
+  margin-bottom: clamp(0.8rem, 2.2vw, 1.2rem) !important;
+}
+
+.mb-4 {
+  margin-bottom: clamp(1.2rem, 3.2vw, 1.8rem) !important;
+}
+
+.mb-5 {
+  margin-bottom: clamp(1.8rem, 4.5vw, 2.5rem) !important;
+}
+
+.py-4 {
+  padding-top: clamp(1.2rem, 3.2vw, 1.8rem) !important;
+  padding-bottom: clamp(1.2rem, 3.2vw, 1.8rem) !important;
+}
+
+.py-5 {
+  padding-top: clamp(1.8rem, 4.5vw, 2.5rem) !important;
+  padding-bottom: clamp(1.8rem, 4.5vw, 2.5rem) !important;
+}
+
+/* SPIN ANIMATION - Smooth rotation */
 @keyframes spin {
+  from {
+    transform: translateY(-50%) rotate(0deg);
+  }
+
   to {
-    transform: rotate(360deg);
+    transform: translateY(-50%) rotate(360deg);
   }
 }
 
@@ -386,79 +726,319 @@ h6 {
   animation: spin 1s linear infinite;
 }
 
-/* Custom scrollbar for modal */
-.modal-body::-webkit-scrollbar {
-  width: clamp(4px, 1vw, 6px);
-}
-
-.modal-body::-webkit-scrollbar-track {
-  background: var(--app-accent);
-  border-radius: clamp(2px, 0.5vw, 3px);
-}
-
-.modal-body::-webkit-scrollbar-thumb {
-  background: var(--app-muted);
-  border-radius: clamp(2px, 0.5vw, 3px);
-}
-
-.modal-body::-webkit-scrollbar-thumb:hover {
-  background: var(--app-text);
-}
-
-/* Media queries for extreme sizes */
+/* Enhanced media queries */
 @media (max-width: 576px) {
+  .app-container {
+    padding: 1rem;
+  }
+
+  .container-fluid {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .search-input {
+    height: 4.5rem;
+    font-size: 1.125rem;
+    padding-left: 3.75rem !important;
+    padding-right: 3.75rem !important;
+    border-width: 2px;
+  }
+
+  .input-group-icon.start {
+    left: 1.25rem;
+    font-size: 1.125rem;
+  }
+
+  .input-group-icon.end {
+    right: 1.25rem;
+    font-size: 1.125rem;
+  }
+
+  .btn-icon {
+    font-size: 1.125rem;
+    right: 1.25rem;
+  }
+
+  .settings-panel {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .modal.show {
+    padding: 0.75rem;
+  }
+
   .modal-dialog {
-    margin: 0.5rem;
+    max-width: 100vw;
+    max-height: 95vh;
   }
-  
-  .modal-header .d-flex {
-    flex-direction: column;
-    align-items: flex-start !important;
+
+  .modal-header {
+    padding: 1.25rem;
   }
-  
+
+  .sectioned-modal-list {
+    gap: 1.25rem;
+  }
+
   .btn-close {
-    align-self: flex-end;
-    margin-top: -0.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .stats-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .settings-panel .d-flex {
+    gap: 0.6rem !important;
+  }
+
+  .settings-panel label {
+    font-size: 0.8rem;
+  }
+
+  .suggestion-item {
+    padding: 1.125rem;
+    min-height: 3.75rem;
+    font-size: 1.05rem;
+  }
+
+  .section-header {
+    padding: 1rem;
+    min-height: 3.25rem;
+  }
+
+  .section-header h6 {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .app-container {
+    padding: 0.75rem;
+  }
+
+  .search-input {
+    height: 4rem;
+    font-size: 1rem;
+    padding-left: 3.25rem !important;
+    padding-right: 3.25rem !important;
+  }
+
+  .input-group-icon.start {
+    left: 1rem;
+    font-size: 1rem;
+  }
+
+  .input-group-icon.end {
+    right: 1rem;
+    font-size: 1rem;
+  }
+
+  .btn-icon {
+    font-size: 1rem;
+    right: 1rem;
+  }
+
+  .suggestion-item {
+    padding: 1rem;
+    font-size: 1rem;
+    min-height: 3.25rem;
+  }
+
+  .modal.show {
+    padding: 0.5rem;
   }
 }
 
 @media (min-width: 1400px) {
   html {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
-}
 
-/* Enhanced modal backdrop */
-.modal.show {
-  backdrop-filter: blur(4px);
+  .search-input {
+    height: 5.5rem;
+    font-size: 1.5rem;
+  }
+
+  .input-group-icon {
+    font-size: 1.5rem;
+  }
+
+  .btn-icon {
+    font-size: 1.5rem;
+  }
+
+  .modal-dialog {
+    max-width: 1400px;
+  }
 }
 
 /* Smooth transitions for all interactive elements */
 .suggestion-item,
 .btn,
-.section-header {
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Focus states for accessibility */
-.suggestion-item:focus,
-.section-header:focus {
-  outline: 2px solid var(--bs-primary);
-  outline-offset: 2px;
+.section-header,
+.search-input,
+.btn-icon,
+.settings-panel,
+.suggestion-section {
+  transition: all 0.2s ease;
 }
 
 /* Better visual distinction for checkmarks */
 .suggestion-item .bi-check-circle-fill {
   color: var(--bs-success) !important;
-  font-size: clamp(0.875rem, 2.2vw, 1rem);
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  filter: drop-shadow(0 1px 2px rgba(25, 135, 84, 0.15));
 }
 
-/* Improve text contrast for opened items */
 .suggestion-item.opened .bi-check-circle-fill {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-/* Better hover effects for opened items */
 .suggestion-item.opened:hover .bi-check-circle-fill {
   opacity: 1;
+}
+
+/* Enhanced form labels */
+.form-label {
+  font-size: clamp(0.8rem, 2.1vw, 0.875rem);
+  font-weight: 500;
+  margin-bottom: clamp(0.3rem, 0.8vw, 0.5rem);
+  color: var(--app-text);
+}
+
+/* Better spacing for text content */
+p {
+  line-height: 1.6;
+  margin-bottom: clamp(0.6rem, 1.6vw, 0.8rem);
+}
+
+.text-muted {
+  font-size: clamp(0.85rem, 2.3vw, 0.95rem);
+  line-height: 1.6;
+  color: var(--app-muted);
+}
+
+/* Better title spacing */
+.text-center.mb-5 {
+  margin-bottom: clamp(1.8rem, 4.5vw, 2.5rem) !important;
+}
+
+.text-center.mb-5 h1 {
+  margin-bottom: clamp(0.75rem, 2vw, 1rem) !important;
+}
+
+.text-center.mb-5 p {
+  font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Enhanced search experience focus */
+.position-relative {
+  margin-bottom: clamp(1.8rem, 4.5vw, 2.5rem) !important;
+}
+
+/* Placeholder styling */
+.search-input::-webkit-input-placeholder {
+  color: rgba(108, 117, 125, 0.65);
+  font-weight: 400;
+}
+
+.search-input::-moz-placeholder {
+  color: rgba(108, 117, 125, 0.65);
+  font-weight: 400;
+}
+
+.search-input:-ms-input-placeholder {
+  color: rgba(108, 117, 125, 0.65);
+  font-weight: 400;
+}
+
+.search-input::placeholder {
+  color: rgba(108, 117, 125, 0.65);
+  font-weight: 400;
+}
+
+/* Prevent body scroll when modal is open */
+body.modal-open {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Enhanced empty state */
+.text-center.py-5.text-muted {
+  padding: clamp(2.5rem, 6vw, 3.5rem) clamp(1.5rem, 3.5vw, 2.5rem) !important;
+}
+
+.text-center.py-5.text-muted i {
+  opacity: 0.25;
+  margin-bottom: clamp(0.8rem, 2.2vw, 1.2rem);
+}
+
+.text-center.py-5.text-muted h5 {
+  color: var(--app-muted);
+  margin-bottom: clamp(0.4rem, 1vw, 0.6rem);
+}
+
+/* Better focus indicators */
+.suggestion-item:focus-visible,
+.section-header:focus-visible {
+  outline: 2px solid var(--app-border-focus);
+  outline-offset: 2px;
+}
+
+/* Close button styling */
+.btn-close {
+  background-size: 1.4em;
+  opacity: 0.65;
+  transition: all 0.2s ease;
+}
+
+.btn-close:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Responsive modal title */
+.modal-title {
+  font-size: clamp(1.2rem, 2.8vw, 1.4rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+}
+
+/* Enhanced visual hierarchy for search vs settings */
+.position-relative {
+  /* Make search input the hero */
+  position: relative;
+  z-index: 2;
+}
+
+.settings-panel {
+  /* Make settings less prominent */
+  position: relative;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+.settings-panel:hover {
+  opacity: 1;
+}
+
+/* Better touch targets for mobile */
+@media (pointer: coarse) {
+
+  .btn,
+  .suggestion-item,
+  .section-header {
+    min-height: 44px;
+  }
+
+  .btn-sm {
+    min-height: 40px;
+  }
 }
