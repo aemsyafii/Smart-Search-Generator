@@ -3,7 +3,7 @@ import {
   LanguageProvider,
   useLanguage,
 } from "./components/LanguageContext";
-import { Toaster } from 'sonner@2.0.3';
+import { Toaster } from 'sonner';
 
 function AppContent() {
   const { t } = useLanguage();

@@ -8,7 +8,7 @@ import {
 } from './utils/suggestionGenerators';
 import { SuggestionItem } from './SuggestionItem';
 import { SectionHeader } from './SectionHeader';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 export function SearchSuggestions() {
   const { t, language, setLanguage } = useLanguage();
