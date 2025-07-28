@@ -1,14 +1,13 @@
-import { SearchSuggestions } from './components/SearchSuggestions';
-import { LanguageProvider, useLanguage } from './components/LanguageContext';
-import { useEffect } from 'react';
+import { SearchSuggestions } from "./components/SearchSuggestions";
+import {
+  LanguageProvider,
+  useLanguage,
+} from "./components/LanguageContext";
+import { Toaster } from 'sonner@2.0.3';
 
 function AppContent() {
   const { t } = useLanguage();
 
-  useEffect(() => {
-    document.title = t.appTitle;
-  }, [t.appTitle]);
-  
   return (
     <div className="app-container">
       <div className="container-fluid py-5">
@@ -16,15 +15,27 @@ function AppContent() {
           <div className="col-12 col-lg-8 col-xl-6">
             <div className="text-center mb-5">
               <h1 className="mb-3">{t.appTitle}</h1>
-              <p className="text-muted">
-                {t.appDescription}
-              </p>
+              <p className="text-muted">{t.appDescription}</p>
             </div>
-            
+
             <SearchSuggestions />
           </div>
         </div>
       </div>
+      
+      {/* Toast notifications */}
+      <Toaster 
+        position="top-center"
+        richColors
+        closeButton
+        toastOptions={{
+          style: {
+            background: 'var(--app-bg)',
+            color: 'var(--app-text)',
+            border: '1px solid var(--app-border)',
+          },
+        }}
+      />
     </div>
   );
 }
